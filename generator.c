@@ -6,6 +6,13 @@
 
 int main()
 {
+int tamSenha;
+
+printf("Digite a extensão da senha: ");
+scanf("%d", &tamSenha);
+
+
+
          int i,count=0;
 	  srand ( time(NULL) );
          do
