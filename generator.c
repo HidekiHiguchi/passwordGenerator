@@ -6,18 +6,18 @@
 //Obrigado
 int main()
 {
-int pwlen;
+	int pwlen=0;
 
 
-printf("Enter Password length: ");
-scanf("%d", &pwlen);
+	printf("Enter Password length: ");
+	scanf("%d", &pwlen);
 
-printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
+	printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
 
 
 
          int i,count=0;
-	  srand ( time(NULL) );
+	 srand ( time(NULL) );
          do
          {
                 count++;
@@ -30,7 +30,7 @@ printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
                  i++;
 
          }
-         while(count<=pwlen);
+         while(count<pwlen);
          return 0;
 
 }
