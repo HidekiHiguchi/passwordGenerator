@@ -6,10 +6,10 @@
 //Obrigado
 int main()
 {
-int tamSenha;
+int pwlen;
 
 printf("Digite a extensão da senha: ");
-scanf("%d", &tamSenha);
+scanf("%d", &pwlen);
 
 
 
