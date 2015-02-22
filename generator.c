@@ -10,41 +10,43 @@ int main()
 
 	int j, x; 
 
-	for (j = 97; j <= 122; j++){;
-	pw[x] == j;
-	x++;
-}
+	for (j = 97; j <= 122; j++)
+	{
+		pw[x] == j;
+		x++;
+	}
 
-for (j = 48; j<= 57; j++){
-	pw[x] == j; 
-	x++;
-}
+	for (j = 48; j<= 57; j++)
+	{
+		pw[x] == j; 
+		x++;
+	}
 
-int pwlen=0;
-
-
-printf("Enter Password length: ");
-scanf("%d", &pwlen);
-
-printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
+	int pwlen=0;
 
 
+	printf("Enter Password length: ");
+	scanf("%d", &pwlen);
 
-int i,count=0;
-srand ( time(NULL) );
-do
-{
-	count++;
+	printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
+
+
+
+	int i,count=0;
+	srand ( time(NULL) );
 	do
 	{
-		i = rand() % 122;
-	}
-	while(i<48 || i>57 && i<97);
-	printf("%d %c \n",i,i);
-	i++;
+		count++;
+		do
+		{
+			i = rand() % 122;
+		}
+		while(i<48 || i>57 && i<97);
+		printf("%d %c \n",i,i);
+		i++;
 
-}
-while(count<pwlen);
-return 0;
+	}
+	while(count<pwlen);
+	return 0;
 
 }
