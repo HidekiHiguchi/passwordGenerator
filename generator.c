@@ -7,12 +7,14 @@
 int main()
 {
          int i,count=0;
+	  srand ( time(NULL) );
          do
          {
                 count++;
                  i = rand() % 120;
                  printf("%d %c \n",i,i);
                  i++;
+
          }
          while(count<=8);
          return 0;
