@@ -1,2 +1,2 @@
 # passwordGenerator
-Just a simple password generator
+Just a simple and open password generator.
