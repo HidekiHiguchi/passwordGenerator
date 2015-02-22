@@ -10,7 +10,7 @@ int main()
 
 	int j, x; 
 
-	for (j = 97; j <= 122; j++);
+	for (j = 97; j <= 122; j++){;
 	pw[x] == j;
 	x++;
 }
