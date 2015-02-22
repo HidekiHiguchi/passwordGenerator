@@ -6,13 +6,15 @@
 
 int main()
 {
-    int i;
-    i=0;
-    do
-    {
-        printf("%d %c \n",i,i); //print words
-        i++;
-    }
-    while(i<=255);
-    return 0;
+         int i,count=0;
+         do
+         {
+                count++;
+                 i = rand() % 120;
+                 printf("%d %c \n",i,i);
+                 i++;
+         }
+         while(count<=8);
+         return 0;
+
 }
