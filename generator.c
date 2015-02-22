@@ -9,7 +9,7 @@ int main()
 int pwlen;
 
 
-printf("Digite a extensão da senha: ");
+printf("Enter Password length: ");
 scanf("%d", &pwlen);
 
 printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
