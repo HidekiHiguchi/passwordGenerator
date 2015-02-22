@@ -21,12 +21,16 @@ printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n ");
          do
          {
                 count++;
-                 i = rand() % 120;
+		do
+		{
+                	 i = rand() % 122;
+		}
+		while(i<48 || i>57 && i<97);
                  printf("%d %c \n",i,i);
                  i++;
 
          }
-         while(count<=8);
+         while(count<=pwlen);
          return 0;
 
 }
