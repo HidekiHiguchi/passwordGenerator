@@ -6,49 +6,75 @@
 //Obrigado
 int main()
 {
-/*
-	int pw[35];
 
-	int j, x; 
+	int pw[59];
+
+
+	int j=0, x=0; 
 
 	for (j = 97; j <= 122; j++)
 	{
-		pw[x] == j;
+		pw[x] = j;
 		x++;
 	}
 
-	for (j = 48; j<= 57; j++)
+	for (j = 48; j<= 58; j++)
 	{
-		pw[x] == j; 
+		pw[x] = j; 
 		x++;
 	}
-*/
-	int pwlen=0;
+	
+	for(j =65; j<90; j++)
+	{
+		pw[x] = j; 
+		x++;
+	}
 
+	int pwlen = 0;   
+	char upper,exit; 
 
-	printf("Enter Password length: ");
-	scanf("%d", &pwlen);
-
-	// printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n "); To be implemented
-	// printf("Your password is: ");
-
-
-	int i,count=0;
-	srand ( time(NULL) );
 	do
 	{
-		count++;
-		do
-		{
-			i = rand() % 122;
+
+		printf("\n\nEnter Password length: ");
+		scanf("%d", &pwlen);
+
+		printf("\n\nWish to use upper case letter?: y/n?:  "); 
+		scanf(" %c",&upper);   
+	
+		printf("\n\nYour password generated is: ");
+	
+		if(upper == 'n' || upper == 'n')
+		{	
+
+			int count, i;
+
+			srand ( time(NULL) );
+			for( count = 0; count <= pwlen -1  ;  count++)	
+			{ 
+				i = rand() % 36;
+				printf("%c",pw[i]); 
+			}
+			printf("\n");
 		}
-		while(i<48 || i>57 && i<97);
-		printf("%c",i);
-		i++;
+		else
+		{
+	
+			int count, i;
 
+			srand ( time(NULL) );
+			for( count = 0; count <= pwlen  ;  count++)	
+			{ 
+				i = rand() % 59;
+				printf("%c",pw[i]); 
+			}
+			printf("\n\n");
+
+		}
+		printf("\n\ntry again? y/n: ");
+		scanf(" %c",&exit);
 	}
-	while(count<pwlen);
-	printf("\n");
-	return 0;
-
+	while(exit == 'y' || exit =='Y');
+	return(0);
+//well done
 }
