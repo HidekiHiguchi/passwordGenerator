@@ -63,7 +63,7 @@ int main()
 			int count, i;
 
 			srand ( time(NULL) );
-			for( count = 0; count <= pwlen  ;  count++)	
+			for( count = 0; count <= pwlen -1  ;  count++)	
 			{ 
 				i = rand() % 59;
 				printf("%c",pw[i]); 
