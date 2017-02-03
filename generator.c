@@ -24,7 +24,7 @@ int main()
 		x++;
 	}
 	
-	for(j =65; j<90; j++)
+	for(j =65; j<87; j++)
 	{
 		pw[x] = j; 
 		x++;
